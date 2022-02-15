@@ -1,7 +1,7 @@
 #!/bin/sh
 
 ##############################################################################
-# VitalFly is a Spigot Plugin that gives players the ability to fly.
+# VitalWelcome is a Spigot Plugin that broadcasts a welcome message when new players join.
 # Copyright © 2022 Leopold Meinel
 #
 # This program is free software: you can redistribute it and/or modify
@@ -15,7 +15,7 @@
 # GNU General Public License for more details.
 #
 # You should have received a copy of the GNU General Public License
-# along with this program. If not, see https://github.com/TamrielNetwork/VitalFly/blob/main/LICENSE
+# along with this program. If not, see https://github.com/TamrielNetwork/VitalWelcome/blob/main/LICENSE
 ##############################################################################
 
 #

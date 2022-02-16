@@ -89,7 +89,7 @@ To get the plugin running on your server follow these simple steps.
 ### Configuration - messages.yml
 
 ```
-welcome: "&dWelcome &b&l%player% &dto the server!"
+welcome: "&6&lWelcome &b&l%player% &6&lto the server!"
 ```
 
 <!-- ROADMAP -->

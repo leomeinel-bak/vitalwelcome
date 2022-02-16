@@ -16,36 +16,22 @@
  * along with this program. If not, see https://github.com/TamrielNetwork/VitalWelcome/blob/main/LICENSE
  */
 
-package com.tamrielnetwork.vitalfly.listeners;
+package com.tamrielnetwork.vitalwelcome.listeners;
 
-import com.tamrielnetwork.vitalfly.VitalFly;
+import com.google.common.collect.ImmutableMap;
+import com.tamrielnetwork.vitalwelcome.utils.Utils;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.player.PlayerGameModeChangeEvent;
-import org.bukkit.plugin.java.JavaPlugin;
-import org.bukkit.scheduler.BukkitRunnable;
+import org.bukkit.event.player.PlayerJoinEvent;
 
-import static org.bukkit.GameMode.SURVIVAL;
-
-public class PlayerGamemodeChange implements Listener {
-
-	private final VitalFly main = JavaPlugin.getPlugin(VitalFly.class);
+public class PlayerJoin implements Listener {
 
 	@EventHandler
-	public void onGamemodeChange(PlayerGameModeChangeEvent event) {
-		new BukkitRunnable() {
-			@Override
-			public void run() {
-				if (!event.getPlayer().hasPermission("vitalfly.fly") || !event.getPlayer().isOnline() || !event.getPlayer().hasPermission("vitalfly.fly.gamemodechange")) {
-					return;
-				}
-
-				if (event.getNewGameMode() == SURVIVAL) {
-					event.getPlayer().setAllowFlight(true);
-					event.getPlayer().setFlying(true);
-				}
-			}
-		}.runTaskLater(main, 1);
+	public void onPlayerJoin(PlayerJoinEvent event) {
+		if (event.getPlayer().hasPlayedBefore()) {
+			return;
+		}
+		Utils.sendBroadcast(ImmutableMap.of("%player%", event.getPlayer().getName()), "welcome");
 	}
 
 }

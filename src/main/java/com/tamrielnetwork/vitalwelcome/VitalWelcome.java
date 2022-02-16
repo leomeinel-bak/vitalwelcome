@@ -16,19 +16,14 @@
  * along with this program. If not, see https://github.com/TamrielNetwork/VitalWelcome/blob/main/LICENSE
  */
 
-package com.tamrielnetwork.vitalfly;
+package com.tamrielnetwork.vitalwelcome;
 
-import com.tamrielnetwork.vitalfly.commands.VitalFlyCmd;
-import com.tamrielnetwork.vitalfly.files.Messages;
-import com.tamrielnetwork.vitalfly.listeners.PlayerChangeWorld;
-import com.tamrielnetwork.vitalfly.listeners.PlayerGamemodeChange;
-import com.tamrielnetwork.vitalfly.listeners.PlayerJoin;
+import com.tamrielnetwork.vitalwelcome.files.Messages;
+import com.tamrielnetwork.vitalwelcome.listeners.PlayerJoin;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import java.util.Objects;
-
-public final class VitalFly extends JavaPlugin {
+public final class VitalWelcome extends JavaPlugin {
 
 	private Messages messages;
 
@@ -37,29 +32,24 @@ public final class VitalFly extends JavaPlugin {
 
 		registerListeners();
 
-		Objects.requireNonNull(getCommand("vitalfly")).setExecutor(new VitalFlyCmd());
-		Objects.requireNonNull(getCommand("vitalfly")).setTabCompleter(new VitalFlyCmd());
-
 		saveDefaultConfig();
 
 		messages = new Messages();
 
-		Bukkit.getLogger().info("VitalFly v" + this.getDescription().getVersion() + " enabled");
+		Bukkit.getLogger().info("VitalWelcome v" + this.getDescription().getVersion() + " enabled");
 		Bukkit.getLogger().info("Copyright (C) 2022 Leopold Meinel");
 		Bukkit.getLogger().info("This program comes with ABSOLUTELY NO WARRANTY!");
 		Bukkit.getLogger().info("This is free software, and you are welcome to redistribute it under certain conditions.");
-		Bukkit.getLogger().info("See https://github.com/TamrielNetwork/VitalFly/blob/main/LICENSE for more details.");
+		Bukkit.getLogger().info("See https://github.com/TamrielNetwork/VitalWelcome/blob/main/LICENSE for more details.");
 	}
 
 	@Override
 	public void onDisable() {
 
-		Bukkit.getLogger().info("VitalFly v" + this.getDescription().getVersion() + " disabled");
+		Bukkit.getLogger().info("VitalWelcome v" + this.getDescription().getVersion() + " disabled");
 	}
 
 	private void registerListeners() {
-		getServer().getPluginManager().registerEvents(new PlayerChangeWorld(), this);
-		getServer().getPluginManager().registerEvents(new PlayerGamemodeChange(), this);
 		getServer().getPluginManager().registerEvents(new PlayerJoin(), this);
 	}
 

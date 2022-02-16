@@ -16,11 +16,13 @@
  * along with this program. If not, see https://github.com/TamrielNetwork/VitalWelcome/blob/main/LICENSE
  */
 
-package com.tamrielnetwork.vitalfly.utils;
+package com.tamrielnetwork.vitalwelcome.utils;
 
-import com.tamrielnetwork.vitalfly.VitalFly;
+import com.tamrielnetwork.vitalwelcome.VitalWelcome;
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
-import org.bukkit.command.CommandSender;
+import org.bukkit.Sound;
+import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.ArrayList;
@@ -30,9 +32,9 @@ import java.util.Objects;
 
 public class Utils {
 
-	private static final VitalFly main = JavaPlugin.getPlugin(VitalFly.class);
+	private static final VitalWelcome main = JavaPlugin.getPlugin(VitalWelcome.class);
 
-	public static void sendMessage(CommandSender player, Map<String, String> placeholders, String message) {
+	public static void sendBroadcast(Map<String, String> placeholders, String message) {
 		List<String> messages = getMessages(message);
 		for (String string : messages) {
 			for (Map.Entry<String, String> entry : placeholders.entrySet()) {
@@ -41,12 +43,11 @@ public class Utils {
 				}
 			}
 
-			player.sendMessage(replaceColors(string));
+			for (Player player : Bukkit.getServer().getOnlinePlayers()) {
+				player.sendMessage(replaceColors(string));
+				player.playSound(player.getLocation(), Sound.ENTITY_TURTLE_EGG_HATCH, 1, 1);
+			}
 		}
-	}
-
-	public static void sendMessage(CommandSender player, String message) {
-		player.sendMessage(replaceColors(Objects.requireNonNull(main.getMessages().getMessagesConf().getString(message))));
 	}
 
 	private static List<String> getMessages(String message) {

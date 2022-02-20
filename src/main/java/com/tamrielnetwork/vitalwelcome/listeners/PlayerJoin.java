@@ -19,19 +19,22 @@
 package com.tamrielnetwork.vitalwelcome.listeners;
 
 import com.google.common.collect.ImmutableMap;
-import com.tamrielnetwork.vitalwelcome.utils.Utils;
+import com.tamrielnetwork.vitalwelcome.utils.Chat;
+import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
+import org.jetbrains.annotations.NotNull;
 
 public class PlayerJoin implements Listener {
 
 	@EventHandler
-	public void onPlayerJoin(PlayerJoinEvent event) {
-		if (event.getPlayer().hasPlayedBefore()) {
+	public void onPlayerJoin(@NotNull PlayerJoinEvent event) {
+		Player player = event.getPlayer();
+		if (player.hasPlayedBefore()) {
 			return;
 		}
-		Utils.sendBroadcast(ImmutableMap.of("%player%", event.getPlayer().getName()), "welcome");
+		Chat.sendBroadcast(ImmutableMap.of("%player%", player.getName()), "welcome");
 	}
 
 }

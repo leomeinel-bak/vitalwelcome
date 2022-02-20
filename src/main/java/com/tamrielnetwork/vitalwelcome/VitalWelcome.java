@@ -32,8 +32,6 @@ public final class VitalWelcome extends JavaPlugin {
 
 		registerListeners();
 
-		saveDefaultConfig();
-
 		messages = new Messages();
 
 		Bukkit.getLogger().info("VitalWelcome v" + this.getDescription().getVersion() + " enabled");

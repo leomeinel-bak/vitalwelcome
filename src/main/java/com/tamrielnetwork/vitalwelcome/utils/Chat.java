@@ -36,6 +36,7 @@ public class Chat {
 	private static final VitalWelcome main = JavaPlugin.getPlugin(VitalWelcome.class);
 
 	public static void sendBroadcast(@NotNull Map<String, String> placeholders, @NotNull String message) {
+
 		List<String> messages = getMessages(message);
 		for (String string : messages) {
 			for (Map.Entry<String, String> entry : placeholders.entrySet()) {
@@ -52,6 +53,7 @@ public class Chat {
 	}
 
 	private static List<String> getMessages(@NotNull String message) {
+
 		List<String> messages;
 		if (main.getMessages().getMessagesConf().isList(message)) {
 			messages = Objects.requireNonNull(main.getMessages().getMessagesConf().getStringList(message));
@@ -63,6 +65,7 @@ public class Chat {
 	}
 
 	public static String replaceColors(@NotNull String string) {
+
 		return ChatColor.translateAlternateColorCodes('&', string);
 	}
 

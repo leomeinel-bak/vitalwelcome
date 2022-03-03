@@ -30,6 +30,7 @@ public class PlayerJoin implements Listener {
 
 	@EventHandler
 	public void onPlayerJoin(@NotNull PlayerJoinEvent event) {
+
 		Player player = event.getPlayer();
 		if (player.hasPlayedBefore()) {
 			return;

@@ -48,10 +48,12 @@ public final class VitalWelcome extends JavaPlugin {
 	}
 
 	private void registerListeners() {
+
 		getServer().getPluginManager().registerEvents(new PlayerJoin(), this);
 	}
 
 	public Messages getMessages() {
+
 		return messages;
 	}
 

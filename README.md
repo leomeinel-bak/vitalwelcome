@@ -44,7 +44,7 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#configuration">Configuration</a></li>
+        <li><a href="#configuration - messages.yml">Configuration</a></li>
       </ul>
     </li>
     <li><a href="#roadmap">Roadmap</a></li>
@@ -80,11 +80,6 @@ This plugin is perfect for any server wanting new players to get welcomed.
 ## Getting Started
 
 To get the plugin running on your server follow these simple steps.
-
-### Configuration - config.yml
-
-```
-```
 
 ### Configuration - messages.yml
 

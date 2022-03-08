@@ -25,6 +25,8 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.Map;
+
 public class PlayerJoin implements Listener {
 
 	@EventHandler
@@ -34,7 +36,7 @@ public class PlayerJoin implements Listener {
 		if (player.hasPlayedBefore()) {
 			return;
 		}
-		Chat.sendBroadcast(java.util.Map.of("%player%", player.getName()), "welcome");
+		Chat.sendBroadcast(Map.of("%player%", player.getName()), "welcome");
 	}
 
 }

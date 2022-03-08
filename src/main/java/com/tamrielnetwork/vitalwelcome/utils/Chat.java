@@ -35,6 +35,11 @@ public class Chat {
 
 	private static final VitalWelcome main = JavaPlugin.getPlugin(VitalWelcome.class);
 
+	private Chat() {
+
+		throw new IllegalStateException("Utility class");
+	}
+
 	public static void sendBroadcast(@NotNull Map<String, String> placeholders, @NotNull String message) {
 
 		List<String> messages = getMessages(message);

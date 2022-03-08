@@ -18,7 +18,6 @@
 
 package com.tamrielnetwork.vitalwelcome.listeners;
 
-import com.google.common.collect.ImmutableMap;
 import com.tamrielnetwork.vitalwelcome.utils.Chat;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -35,7 +34,7 @@ public class PlayerJoin implements Listener {
 		if (player.hasPlayedBefore()) {
 			return;
 		}
-		Chat.sendBroadcast(ImmutableMap.of("%player%", player.getName()), "welcome");
+		Chat.sendBroadcast(java.util.Map.of("%player%", player.getName()), "welcome");
 	}
 
 }

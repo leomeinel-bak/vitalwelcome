@@ -10,7 +10,7 @@
 <!--suppress ALL -->
 <br />
 <p align="center">
-  <a href="https://github.com/TamrielNetwork/VitalWelcome">
+  <a href="https://github.com/LeoMeinel/VitalWelcome">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -19,14 +19,14 @@
   <p align="center">
     Welcome message on Spigot and Paper
     <br />
-    <a href="https://github.com/TamrielNetwork/VitalWelcome"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/LeoMeinel/VitalWelcome"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/TamrielNetwork/VitalWelcome">View Demo</a>
+    <a href="https://github.com/LeoMeinel/VitalWelcome">View Demo</a>
     ·
-    <a href="https://github.com/TamrielNetwork/VitalWelcome/issues">Report Bug</a>
+    <a href="https://github.com/LeoMeinel/VitalWelcome/issues">Report Bug</a>
     ·
-    <a href="https://github.com/TamrielNetwork/VitalWelcome/issues">Request Feature</a>
+    <a href="https://github.com/LeoMeinel/VitalWelcome/issues">Request Feature</a>
   </p>
 
 <!-- TABLE OF CONTENTS -->
@@ -91,7 +91,7 @@ welcome: "&6&lWelcome &b&l%player% &6&lto the server!"
 
 ## Roadmap
 
-See the [open issues](https://github.com/TamrielNetwork/VitalWelcome/issues) for a list of proposed features (and known
+See the [open issues](https://github.com/LeoMeinel/VitalWelcome/issues) for a list of proposed features (and known
 issues).
 
 <!-- CONTRIBUTING -->
@@ -121,7 +121,7 @@ Leopold Meinel - [@TamrielN](https://twitter.com/TamrielN) - Twitter
 
 Leopold Meinel - [contact@tamriel.me](mailto:contact@tamriel.me) - eMail
 
-Project Link - [VitalWelcome](https://github.com/TamrielNetwork/VitalWelcome) - GitHub
+Project Link - [VitalWelcome](https://github.com/LeoMeinel/VitalWelcome) - GitHub
 
 <!-- ACKNOWLEDGEMENTS -->
 
@@ -131,26 +131,26 @@ Project Link - [VitalWelcome](https://github.com/TamrielNetwork/VitalWelcome) - 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
-[contributors-shield]: https://img.shields.io/github/contributors-anon/TamrielNetwork/VitalWelcome?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors-anon/LeoMeinel/VitalWelcome?style=for-the-badge
 
-[contributors-url]: https://github.com/TamrielNetwork/VitalWelcome/graphs/contributors
+[contributors-url]: https://github.com/LeoMeinel/VitalWelcome/graphs/contributors
 
-[forks-shield]: https://img.shields.io/github/forks/TamrielNetwork/VitalWelcome?label=Forks&style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/LeoMeinel/VitalWelcome?label=Forks&style=for-the-badge
 
-[forks-url]: https://github.com/TamrielNetwork/VitalWelcome/network/members
+[forks-url]: https://github.com/LeoMeinel/VitalWelcome/network/members
 
-[stars-shield]: https://img.shields.io/github/stars/TamrielNetwork/VitalWelcome?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/LeoMeinel/VitalWelcome?style=for-the-badge
 
-[stars-url]: https://github.com/TamrielNetwork/VitalWelcome/stargazers
+[stars-url]: https://github.com/LeoMeinel/VitalWelcome/stargazers
 
-[issues-shield]: https://img.shields.io/github/issues/TamrielNetwork/VitalWelcome?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/LeoMeinel/VitalWelcome?style=for-the-badge
 
-[issues-url]: https://github.com/TamrielNetwork/VitalWelcome/issues
+[issues-url]: https://github.com/LeoMeinel/VitalWelcome/issues
 
-[license-shield]: https://img.shields.io/github/license/TamrielNetwork/VitalWelcome?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/LeoMeinel/VitalWelcome?style=for-the-badge
 
-[license-url]: https://github.com/TamrielNetwork/VitalWelcome/blob/main/LICENSE
+[license-url]: https://github.com/LeoMeinel/VitalWelcome/blob/main/LICENSE
 
-[quality-shield]: https://img.shields.io/codefactor/grade/github/TamrielNetwork/VitalWelcome?style=for-the-badge
+[quality-shield]: https://img.shields.io/codefactor/grade/github/LeoMeinel/VitalWelcome?style=for-the-badge
 
-[quality-url]: https://www.codefactor.io/repository/github/TamrielNetwork/VitalWelcome
+[quality-url]: https://www.codefactor.io/repository/github/LeoMeinel/VitalWelcome

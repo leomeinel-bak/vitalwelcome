@@ -16,26 +16,34 @@
  * along with this program. If not, see https://github.com/LeoMeinel/VitalWelcome/blob/main/LICENSE
  */
 
-package com.tamrielnetwork.vitalwelcome.listeners;
+package dev.meinel.leo.vitalwelcome.files;
 
-import com.tamrielnetwork.vitalwelcome.utils.Chat;
-import org.bukkit.entity.Player;
-import org.bukkit.event.EventHandler;
-import org.bukkit.event.Listener;
-import org.bukkit.event.player.PlayerJoinEvent;
-import org.jetbrains.annotations.NotNull;
+import dev.meinel.leo.vitalwelcome.VitalWelcome;
+import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.configuration.file.YamlConfiguration;
+import org.bukkit.plugin.java.JavaPlugin;
 
-import java.util.Map;
+import java.io.File;
 
-public class PlayerJoin
-		implements Listener {
+public class Messages {
 
-	@EventHandler
-	public void onPlayerJoin(@NotNull PlayerJoinEvent event) {
-		Player player = event.getPlayer();
-		if (player.hasPlayedBefore()) {
-			return;
+	private final VitalWelcome main = JavaPlugin.getPlugin(VitalWelcome.class);
+	private final File messagesFile;
+	private final FileConfiguration messagesConf;
+
+	public Messages() {
+		messagesFile = new File(main.getDataFolder(), "messages.yml");
+		saveMessagesFile();
+		messagesConf = YamlConfiguration.loadConfiguration(messagesFile);
+	}
+
+	private void saveMessagesFile() {
+		if (!messagesFile.exists()) {
+			main.saveResource("messages.yml", false);
 		}
-		Chat.sendBroadcast(Map.of("%player%", player.getName()), "welcome");
+	}
+
+	public FileConfiguration getMessagesConf() {
+		return messagesConf;
 	}
 }

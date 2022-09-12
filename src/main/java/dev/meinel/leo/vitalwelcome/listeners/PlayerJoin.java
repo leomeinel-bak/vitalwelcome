@@ -20,12 +20,12 @@ import org.jetbrains.annotations.NotNull;
 
 public class PlayerJoin implements Listener {
 
-  @EventHandler
-  public void onPlayerJoin(@NotNull PlayerJoinEvent event) {
-    Player player = event.getPlayer();
-    if (player.hasPlayedBefore()) {
-      return;
+    @EventHandler
+    public void onPlayerJoin(@NotNull PlayerJoinEvent event) {
+        Player player = event.getPlayer();
+        if (player.hasPlayedBefore()) {
+            return;
+        }
+        Chat.sendBroadcast(Map.of("%player%", player.getName()), "welcome");
     }
-    Chat.sendBroadcast(Map.of("%player%", player.getName()), "welcome");
-  }
 }

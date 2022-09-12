@@ -24,47 +24,47 @@ import org.jetbrains.annotations.NotNull;
 
 public class Chat {
 
-  private static final VitalWelcome main = JavaPlugin.getPlugin(
-      VitalWelcome.class);
+    private static final VitalWelcome main = JavaPlugin.getPlugin(
+            VitalWelcome.class);
 
-  private Chat() {
-    throw new IllegalStateException("Utility class");
-  }
+    private Chat() {
+        throw new IllegalStateException("Utility class");
+    }
 
-  public static void sendBroadcast(
-      @NotNull Map<String, String> placeholders,
-      @NotNull String message) {
-    List<String> messages = getMessages(message);
-    for (String string : messages) {
-      for (Map.Entry<String, String> entry : placeholders.entrySet()) {
-        if (string.contains(entry.getKey())) {
-          string = string.replace(entry.getKey(), entry.getValue());
+    public static void sendBroadcast(
+            @NotNull Map<String, String> placeholders,
+            @NotNull String message) {
+        List<String> messages = getMessages(message);
+        for (String string : messages) {
+            for (Map.Entry<String, String> entry : placeholders.entrySet()) {
+                if (string.contains(entry.getKey())) {
+                    string = string.replace(entry.getKey(), entry.getValue());
+                }
+            }
+            for (Player player : Bukkit.getServer().getOnlinePlayers()) {
+                player.sendMessage(replaceColors(string));
+                player.playSound(
+                        player.getLocation(),
+                        Sound.ENTITY_TURTLE_EGG_HATCH,
+                        1,
+                        1);
+            }
         }
-      }
-      for (Player player : Bukkit.getServer().getOnlinePlayers()) {
-        player.sendMessage(replaceColors(string));
-        player.playSound(
-            player.getLocation(),
-            Sound.ENTITY_TURTLE_EGG_HATCH,
-            1,
-            1);
-      }
     }
-  }
 
-  private static List<String> getMessages(@NotNull String message) {
-    List<String> messages;
-    if (main.getMessages().getMessagesConf().isList(message)) {
-      messages = Objects.requireNonNull(
-          main.getMessages().getMessagesConf().getStringList(message));
-    } else {
-      messages = new ArrayList<>();
-      messages.add(main.getMessages().getMessagesConf().getString(message));
+    private static List<String> getMessages(@NotNull String message) {
+        List<String> messages;
+        if (main.getMessages().getMessagesConf().isList(message)) {
+            messages = Objects.requireNonNull(
+                    main.getMessages().getMessagesConf().getStringList(message));
+        } else {
+            messages = new ArrayList<>();
+            messages.add(main.getMessages().getMessagesConf().getString(message));
+        }
+        return messages;
     }
-    return messages;
-  }
 
-  public static String replaceColors(@NotNull String string) {
-    return ChatColor.translateAlternateColorCodes('&', string);
-  }
+    public static String replaceColors(@NotNull String string) {
+        return ChatColor.translateAlternateColorCodes('&', string);
+    }
 }

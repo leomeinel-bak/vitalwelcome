@@ -1,4 +1,5 @@
 <!-- PROJECT SHIELDS -->
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -67,13 +68,13 @@ This plugin is perfect for any server wanting new players to get welcomed.
 
 ### Features
 
-* Broadcast welcome message when new players join
-* Play ENTITY_TURTLE_EGG_HATCH when new players join
+- Broadcast welcome message when new players join
+- Play ENTITY_TURTLE_EGG_HATCH when new players join
 
 ### Built With
 
-* [Gradle 7](https://docs.gradle.org/7.4/release-notes.html)
-* [OpenJDK 17](https://openjdk.java.net/projects/jdk/17/)
+- [Gradle 7](https://docs.gradle.org/7.4/release-notes.html)
+- [OpenJDK 17](https://openjdk.java.net/projects/jdk/17/)
 
 <!-- GETTING STARTED -->
 
@@ -125,30 +126,19 @@ Project Link - [VitalWelcome](https://github.com/LeoMeinel/VitalWelcome) - GitHu
 
 ### Acknowledgements
 
-* [README.md - othneildrew](https://github.com/othneildrew/Best-README-Template)
+- [README.md - othneildrew](https://github.com/othneildrew/Best-README-Template)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
 [contributors-shield]: https://img.shields.io/github/contributors-anon/LeoMeinel/VitalWelcome?style=for-the-badge
-
 [contributors-url]: https://github.com/LeoMeinel/VitalWelcome/graphs/contributors
-
 [forks-shield]: https://img.shields.io/github/forks/LeoMeinel/VitalWelcome?label=Forks&style=for-the-badge
-
 [forks-url]: https://github.com/LeoMeinel/VitalWelcome/network/members
-
 [stars-shield]: https://img.shields.io/github/stars/LeoMeinel/VitalWelcome?style=for-the-badge
-
 [stars-url]: https://github.com/LeoMeinel/VitalWelcome/stargazers
-
 [issues-shield]: https://img.shields.io/github/issues/LeoMeinel/VitalWelcome?style=for-the-badge
-
 [issues-url]: https://github.com/LeoMeinel/VitalWelcome/issues
-
 [license-shield]: https://img.shields.io/github/license/LeoMeinel/VitalWelcome?style=for-the-badge
-
 [license-url]: https://github.com/LeoMeinel/VitalWelcome/blob/main/LICENSE
-
 [quality-shield]: https://img.shields.io/codefactor/grade/github/LeoMeinel/VitalWelcome?style=for-the-badge
-
 [quality-url]: https://www.codefactor.io/repository/github/LeoMeinel/VitalWelcome

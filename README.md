@@ -30,32 +30,6 @@
     <a href="https://github.com/LeoMeinel/VitalWelcome/issues">Request Feature</a>
   </p>
 
-<!-- TABLE OF CONTENTS -->
-<details open="open">
-  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#description">Description</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#configuration - messages.yml">Configuration</a></li>
-      </ul>
-    </li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
-  </ol>
-</details>
-
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
@@ -73,7 +47,7 @@ This plugin is perfect for any server wanting new players to get welcomed.
 
 ### Built With
 
-- [Gradle 7](https://docs.gradle.org/7.4/release-notes.html)
+- [Gradle 7](https://docs.gradle.org/7.5.1/release-notes.html)
 - [OpenJDK 17](https://openjdk.java.net/projects/jdk/17/)
 
 <!-- GETTING STARTED -->
@@ -84,7 +58,7 @@ To get the plugin running on your server follow these simple steps.
 
 ### Configuration - messages.yml
 
-```
+```yaml
 welcome: "&6&lWelcome &b&l%player% &6&lto the server!"
 ```
 

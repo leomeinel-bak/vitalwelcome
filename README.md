@@ -11,7 +11,7 @@
 <!--suppress ALL -->
 <br />
 <p align="center">
-  <a href="https://github.com/LeoMeinel/VitalWelcome">
+  <a href="https://github.com/LeoMeinel/vitalwelcome">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -20,14 +20,14 @@
   <p align="center">
     Welcome message on Spigot and Paper
     <br />
-    <a href="https://github.com/LeoMeinel/VitalWelcome"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/LeoMeinel/vitalwelcome"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/LeoMeinel/VitalWelcome">View Demo</a>
+    <a href="https://github.com/LeoMeinel/vitalwelcome">View Demo</a>
     ·
-    <a href="https://github.com/LeoMeinel/VitalWelcome/issues">Report Bug</a>
+    <a href="https://github.com/LeoMeinel/vitalwelcome/issues">Report Bug</a>
     ·
-    <a href="https://github.com/LeoMeinel/VitalWelcome/issues">Request Feature</a>
+    <a href="https://github.com/LeoMeinel/vitalwelcome/issues">Request Feature</a>
   </p>
 
 <!-- ABOUT THE PROJECT -->
@@ -66,7 +66,7 @@ welcome: "&6&lWelcome &b&l%player% &6&lto the server!"
 
 ## Roadmap
 
-See the [open issues](https://github.com/LeoMeinel/VitalWelcome/issues) for a list of proposed features (and known
+See the [open issues](https://github.com/LeoMeinel/vitalwelcome/issues) for a list of proposed features (and known
 issues).
 
 <!-- CONTRIBUTING -->
@@ -94,7 +94,7 @@ Distributed under the GNU General Public License v3.0. See `LICENSE` for more in
 
 Leopold Meinel - [leo@meinel.dev](mailto:leo@meinel.dev) - eMail
 
-Project Link - [VitalWelcome](https://github.com/LeoMeinel/VitalWelcome) - GitHub
+Project Link - [VitalWelcome](https://github.com/LeoMeinel/vitalwelcome) - GitHub
 
 <!-- ACKNOWLEDGEMENTS -->
 
@@ -104,15 +104,15 @@ Project Link - [VitalWelcome](https://github.com/LeoMeinel/VitalWelcome) - GitHu
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
-[contributors-shield]: https://img.shields.io/github/contributors-anon/LeoMeinel/VitalWelcome?style=for-the-badge
-[contributors-url]: https://github.com/LeoMeinel/VitalWelcome/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/LeoMeinel/VitalWelcome?label=Forks&style=for-the-badge
-[forks-url]: https://github.com/LeoMeinel/VitalWelcome/network/members
-[stars-shield]: https://img.shields.io/github/stars/LeoMeinel/VitalWelcome?style=for-the-badge
-[stars-url]: https://github.com/LeoMeinel/VitalWelcome/stargazers
-[issues-shield]: https://img.shields.io/github/issues/LeoMeinel/VitalWelcome?style=for-the-badge
-[issues-url]: https://github.com/LeoMeinel/VitalWelcome/issues
-[license-shield]: https://img.shields.io/github/license/LeoMeinel/VitalWelcome?style=for-the-badge
-[license-url]: https://github.com/LeoMeinel/VitalWelcome/blob/main/LICENSE
-[quality-shield]: https://img.shields.io/codefactor/grade/github/LeoMeinel/VitalWelcome?style=for-the-badge
-[quality-url]: https://www.codefactor.io/repository/github/LeoMeinel/VitalWelcome
+[contributors-shield]: https://img.shields.io/github/contributors-anon/LeoMeinel/vitalwelcome?style=for-the-badge
+[contributors-url]: https://github.com/LeoMeinel/vitalwelcome/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/LeoMeinel/vitalwelcome?label=Forks&style=for-the-badge
+[forks-url]: https://github.com/LeoMeinel/vitalwelcome/network/members
+[stars-shield]: https://img.shields.io/github/stars/LeoMeinel/vitalwelcome?style=for-the-badge
+[stars-url]: https://github.com/LeoMeinel/vitalwelcome/stargazers
+[issues-shield]: https://img.shields.io/github/issues/LeoMeinel/vitalwelcome?style=for-the-badge
+[issues-url]: https://github.com/LeoMeinel/vitalwelcome/issues
+[license-shield]: https://img.shields.io/github/license/LeoMeinel/vitalwelcome?style=for-the-badge
+[license-url]: https://github.com/LeoMeinel/vitalwelcome/blob/main/LICENSE
+[quality-shield]: https://img.shields.io/codefactor/grade/github/LeoMeinel/vitalwelcome?style=for-the-badge
+[quality-url]: https://www.codefactor.io/repository/github/LeoMeinel/vitalwelcome

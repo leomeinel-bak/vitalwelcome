@@ -23,27 +23,18 @@ public final class VitalWelcome extends JavaPlugin {
     public void onEnable() {
         registerListeners();
         messages = new Messages();
-        Bukkit
-                .getLogger()
-                .info("VitalWelcome v" + this.getPluginMeta().getVersion() + " enabled");
+        Bukkit.getLogger().info("VitalWelcome v" + this.getPluginMeta().getVersion() + " enabled");
         Bukkit.getLogger().info("Copyright (C) 2022 Leopold Meinel");
         Bukkit.getLogger().info("This program comes with ABSOLUTELY NO WARRANTY!");
-        Bukkit
-                .getLogger()
-                .info(
-                        "This is free software, and you are welcome to redistribute it under certain conditions.");
-        Bukkit
-                .getLogger()
-                .info(
-                        "See https://www.gnu.org/licenses/gpl-3.0-standalone.html for more details.");
+        Bukkit.getLogger().info(
+                "This is free software, and you are welcome to redistribute it under certain conditions.");
+        Bukkit.getLogger()
+                .info("See https://www.gnu.org/licenses/gpl-3.0-standalone.html for more details.");
     }
 
     @Override
     public void onDisable() {
-        Bukkit
-                .getLogger()
-                .info(
-                        "VitalWelcome v" + this.getPluginMeta().getVersion() + " disabled");
+        Bukkit.getLogger().info("VitalWelcome v" + this.getPluginMeta().getVersion() + " disabled");
     }
 
     private void registerListeners() {

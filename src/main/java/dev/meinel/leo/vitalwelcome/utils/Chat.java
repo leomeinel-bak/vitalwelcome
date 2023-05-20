@@ -2,7 +2,7 @@
  * File: Chat.java
  * Author: Leopold Meinel (leo@meinel.dev)
  * -----
- * Copyright (c) 2022 Leopold Meinel & contributors
+ * Copyright (c) 2023 Leopold Meinel & contributors
  * SPDX ID: GPL-3.0-or-later
  * URL: https://www.gnu.org/licenses/gpl-3.0-standalone.html
  * -----
@@ -24,15 +24,13 @@ import org.jetbrains.annotations.NotNull;
 
 public class Chat {
 
-    private static final VitalWelcome main = JavaPlugin.getPlugin(
-            VitalWelcome.class);
+    private static final VitalWelcome main = JavaPlugin.getPlugin(VitalWelcome.class);
 
     private Chat() {
         throw new IllegalStateException("Utility class");
     }
 
-    public static void sendBroadcast(
-            @NotNull Map<String, String> placeholders,
+    public static void sendBroadcast(@NotNull Map<String, String> placeholders,
             @NotNull String message) {
         List<String> messages = getMessages(message);
         for (String string : messages) {
@@ -43,11 +41,7 @@ public class Chat {
             }
             for (Player player : Bukkit.getServer().getOnlinePlayers()) {
                 player.sendMessage(replaceColors(string));
-                player.playSound(
-                        player.getLocation(),
-                        Sound.ENTITY_TURTLE_EGG_HATCH,
-                        1,
-                        1);
+                player.playSound(player.getLocation(), Sound.ENTITY_TURTLE_EGG_HATCH, 1, 1);
             }
         }
     }
@@ -55,8 +49,8 @@ public class Chat {
     private static List<String> getMessages(@NotNull String message) {
         List<String> messages;
         if (main.getMessages().getMessagesConf().isList(message)) {
-            messages = Objects.requireNonNull(
-                    main.getMessages().getMessagesConf().getStringList(message));
+            messages = Objects
+                    .requireNonNull(main.getMessages().getMessagesConf().getStringList(message));
         } else {
             messages = new ArrayList<>();
             messages.add(main.getMessages().getMessagesConf().getString(message));
